@@ -8,17 +8,12 @@ export const Sidebar = () => {
     const links = [
         { to: "/dashboard", label: "Dashboard", icon: <FaTachometerAlt /> },
         { to: "/dashboard/seo-profile", label: "SEO Profile", icon: <FaPenNib /> },
-        { to: "/dashboard/content", label: "Content Management", icon: <FaClipboardList /> },
-        { to: "/dashboard/competitors", label: "Competitor Analysis", icon: <FaChartLine /> },
-        { to: "/dashboard/backlinks", label: "Backlink Management", icon: <FaLink /> },
-        { to: "/dashboard/reports", label: "Reports and Analytics", icon: <FaChartLine /> },
+        { to: "/dashboard/seo-optimization", label: "SEO Optimization", icon: <FaWrench /> },  // Updated
+        { to: "/dashboard/content-management", label: "Content Management", icon: <FaClipboardList /> },  // Updated
+        { to: "/dashboard/external-analysis", label: "External Analysis", icon: <FaChartLine /> },  // Updated
+        { to: "/dashboard/performance-analytics", label: "Performance Analytics", icon: <FaEye /> },  // Updated
         { to: "/dashboard/tasks", label: "Task Automation", icon: <FaTasks /> },
         { to: "/dashboard/localseo", label: "Local SEO", icon: <FaMapMarkerAlt /> },
-        { to: "/dashboard/technical-seo", label: "Technical SEO", icon: <FaWrench /> },
-        { to: "/dashboard/on-page-seo", label: "On-Page SEO", icon: <FaFileAlt /> },
-        { to: "/dashboard/content-strategy", label: "Content Strategy", icon: <FaClipboardList /> },
-        { to: "/dashboard/off-page-seo", label: "Off-Page SEO", icon: <FaNetworkWired /> },
-        { to: "/dashboard/analytics", label: "Analytics", icon: <FaEye /> },
         { to: "/dashboard/settings", label: "Settings", icon: <FaUserCog /> },
     ];
 
@@ -33,9 +28,8 @@ export const Sidebar = () => {
                         <li key={index}>
                             <Link
                                 to={link.to}
-                                className={`flex items-center px-4 py-3 space-x-3 rounded-md text-sm font-medium hover:bg-gray-700 transition-colors duration-200 ${
-                                    location.pathname === link.to ? 'bg-gray-700' : ''
-                                }`}
+                                className={`flex items-center px-4 py-3 space-x-3 rounded-md text-sm font-medium hover:bg-gray-700 transition-colors duration-200 ${location.pathname === link.to ? 'bg-gray-700' : ''
+                                    }`}
                             >
                                 {link.icon}
                                 <span>{link.label}</span>
