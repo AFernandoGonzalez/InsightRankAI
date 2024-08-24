@@ -25,10 +25,10 @@ export const App = () => {
                 <Route path="dashboard" element={<Layout />}>
                     <Route index element={<Dashboard />} />
                     <Route path="seo-profile" element={<SeoProfile />} />
+                    <Route path="seo-optimization" element={<SeoOptimization />} />  {/* Updated */}
                     <Route path="content-management" element={<ContentManagement />} />  {/* Updated */}
                     <Route path="external-analysis" element={<ExternalAnalysis />} />  {/* Updated */}
                     <Route path="performance-analytics" element={<PerformanceAnalytics />} />  {/* Updated */}
-                    <Route path="seo-optimization" element={<SeoOptimization />} />  {/* Updated */}
                     <Route path="tasks" element={<Tasks />} />
                     <Route path="localseo" element={<LocalSeo />} />
                     <Route path="settings" element={<Settings />} />

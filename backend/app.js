@@ -27,7 +27,7 @@ app.get('/api/test', (req, res) => {
     res.json({ message: 'Server is working!' });
 });
 // app.use('/api/auth', authRoutes);
-// app.use('/api/seo', seoRoutes);
+app.use('/api/seo', seoRoutes);
 // app.use('/api/content', contentRoutes);
 // app.use('/api/competitors', competitorRoutes);
 // app.use('/api/backlinks', backlinkRoutes);
